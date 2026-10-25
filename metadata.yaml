@@ -1,6 +1,15 @@
-name: helloworld # 插件唯一识别名，以 astrbot_plugin_ 前缀开头
-display_name: helloworld # 用于展示的名字，可以是方便人类阅读的名字（需要版本 >= v4.5.0，低版本不会报错，请放心填写）
-desc: AstrBot 插件示例。 # 插件简短描述
-version: v1.3.0 # 插件版本号。格式：v1.1.1 或者 v1.1
-author: Soulter # 作者
-repo: https://github.com/Soulter/helloworld # 插件的仓库地址
+name: astrbot_plugin_at_nickname_fixer # 插件唯一识别名，必须以 astrbot_plugin_ 前缀开头
+display_name: At昵称修复 # 用于展示的名字（需要 AstrBot >= v4.5.0）
+desc: 将 QQ 官方机器人消息中的 <@OpenID> 替换为 @昵称 # 插件简短描述
+short_desc: 修复 QQ 官方机器人 @ 提及昵称丢失问题 # 可选，插件市场卡片短描述
+version: v1.0.0 # 插件版本号，格式 v1.1 或 v1.1.1
+author: ttwe77 # 作者
+repo: https://github.com/ttwe77/at_nickname_fixer # 插件仓库地址
+
+# 可选：声明插件支持的平台适配器
+support_platforms:
+  - qq_official # 本项目专为 QQ 官方机器人适配器设计
+  - qq_official_webhook # 如果也使用 Webhook 方式，可以一并声明
+
+# 可选：声明 AstrBot 版本范围（PEP 440 格式，不要加 v 前缀）
+astrbot_version: ">=4.17.0"
