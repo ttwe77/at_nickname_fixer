@@ -2,7 +2,7 @@ name: astrbot_plugin_at_nickname_fixer # 插件唯一识别名，必须以 astrb
 display_name: At昵称修复 # 用于展示的名字（需要 AstrBot >= v4.5.0）
 desc: 将 QQ 官方机器人消息中的 <@OpenID> 替换为 @昵称 # 插件简短描述
 short_desc: 修复 QQ 官方机器人 @ 提及昵称丢失问题 # 可选，插件市场卡片短描述
-version: v1.0.0 # 插件版本号，格式 v1.1 或 v1.1.1
+version: v1.1.0 # 插件版本号，格式 v1.1 或 v1.1.1
 author: ttwe77 # 作者
 repo: https://github.com/ttwe77/at_nickname_fixer # 插件仓库地址
 
