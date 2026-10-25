@@ -110,8 +110,8 @@ class AtNicknameFixer(Star):
 
             # 6. 将修改后的文本写回，供 LLM 读取
             logger.debug("[AtNicknameFixer] [步骤6] 将修改后的文本写回 message_obj.message_str")
-            message_obj.message_str = new_content
-            logger.info(f"[AtNicknameFixer] 替换成功，新文本: {new_content!r}")
+            req.prompt = new_content
+            logger.info(f"[AtNicknameFixer] 替换成功，新 prompt: {req.prompt}")
             logger.debug("[AtNicknameFixer] ===== 处理完成 =====")
 
         except Exception as e:
